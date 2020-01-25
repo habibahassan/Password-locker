@@ -1,18 +1,18 @@
-# import unittest
+import unittest
 
-# from password import password
+from password import password
 
 
-# class TestUser(unittest.TestCase):
-#     '''
-#     Test class that defines the test cases for user class
-#     behaviours
-#     '''
-#     def setUp(self):
-#         '''
-#         Setup method to run before each test cases
-#         '''
-#         self.new_password = password("twitter", "tygr")
+class TestUser(unittest.TestCase):
+    '''
+    Test class that defines the test cases for user class
+    behaviours
+    '''
+    def setUp(self):
+        '''
+        Setup method to run before each test cases
+        '''
+        self.new_password = password("twitter", "tygr")
 #     def test_save_password(self):
 #         '''
 #         test_save_password tests if a new password has been added to passwords
