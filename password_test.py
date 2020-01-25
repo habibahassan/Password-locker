@@ -26,16 +26,16 @@ class TestUser(unittest.TestCase):
         '''
         self.assertEqual(password.display_passwords(),
                          password.password_list)
-#     def test_delete_password(self):
-#         '''
-#         test_delete_password to see if we can remove a 
-#         password from passwords list
-#         '''
-#         self.new_password.save_password()
-#         test_password = password("test", "5921fszju")
-#         test_password.save_password()
+    def test_delete_password(self):
+        '''
+        test_delete_password to see if we can remove a 
+        password from passwords list
+        '''
+        self.new_password.save_password()
+        test_password = password("test", "5921fszju")
+        test_password.save_password()
 
-#         self.assertEqual(len(password.password_list), 2)
+        self.assertEqual(len(password.password_list), 2)
 
-# if __name__ ==  '__main__':
-#     unittest.main()
+if __name__ ==  '__main__':
+    unittest.main()
