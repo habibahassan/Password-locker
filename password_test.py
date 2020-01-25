@@ -13,13 +13,13 @@ class TestUser(unittest.TestCase):
         Setup method to run before each test cases
         '''
         self.new_password = password("twitter", "tygr")
-#     def test_save_password(self):
-#         '''
-#         test_save_password tests if a new password has been added to passwords
-#         list of a user
-#         '''
-#         self.new_password.save_password()
-#         self.assertEqual(len(password.password_list), 3)    
+    def test_save_password(self):
+        '''
+        test_save_password tests if a new password has been added to passwords
+        list of a user
+        '''
+        self.new_password.save_password()
+        self.assertEqual(len(password.password_list), 3)    
 #     def test_display_passwords(self):
 #         '''
 #         test to display the passwords of a user
