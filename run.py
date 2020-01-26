@@ -30,6 +30,12 @@ def check_existing_user(password2):
     function to check that enable login authentification
     '''
     return User.user_exist(password2)
+def find_account(password2):
+    '''
+    function to find account by its name
+    '''
+    return User.find_account(password2)
+
 
 
 
