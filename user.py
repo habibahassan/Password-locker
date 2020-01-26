@@ -9,7 +9,7 @@ class User:
         save_user method saves users
         '''
         User.user_list.append(self)
-     def __init__(self, first_name, second_name, password):
+    def __init__(self, first_name, second_name, password):
 
        # create new user instance
 
@@ -22,7 +22,7 @@ class User:
         method to display all the users
         '''
         return cls.user_list
-     @classmethod
+    @classmethod
     def user_exist(cls, password):
         '''
         method to check if a user and
