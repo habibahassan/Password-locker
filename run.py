@@ -35,7 +35,12 @@ def find_account(password2):
     function to find account by its name
     '''
     return User.find_account(password2)
-
+def create_user(f_name, s_name, password):
+    '''
+    function to create a new user
+    '''
+    new_user = User(f_name, s_name, password)
+    return new_user
 
 
 
