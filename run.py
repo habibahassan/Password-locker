@@ -47,7 +47,7 @@ def save_users(user):
     function to save a user
     '''
     user.save_user()
-def intro():
+def introduction():
     print("Hey! Welcome to Password Locker")
     print('\n')
     print("Please sign up for an accout to enjoy services")
@@ -75,7 +75,7 @@ def intro():
             save_users(create_user(f_name, s_name, password))
             print('\n')
             print(
-                f"⇨ Congratulations {f_name} {s_name}, you now have an account \n")
+                f"Congratulations {f_name} {s_name}, you now have an account \n")
             print('\n')
         elif short_code == 'lg':
 
@@ -91,7 +91,7 @@ def intro():
                     print(
                         f"⇨ Welcome {search_account.first_name} {search_account.second_name} \n")
                     print(
-                        "⇨ cc-To create new password, vc-To view all your passwords, ex-exit account \n ")
+                        "cc-To create new password, vc-To view all your passwords, ex-exit account \n ")
                     print('-'*80)
                     short_code = input().lower()
                     if short_code == 'cc':
@@ -126,7 +126,7 @@ def intro():
                     elif short_code == 'vc':
                         if display_passwords:
                             print(
-                                "⇨ Here is a list of all your accounts and passwords \n")
+                                "Here is a list of all your accounts and passwords \n")
                             for password in display_passwords():
                                 print(
                                     f"Account name: {password.account_name} - password: {password.passkey}")
@@ -138,7 +138,7 @@ def intro():
                             password.password_list.remove(password)
                             print("password deleted")
                         else:
-                            print("No match of such a password")
+                            print("No match this password")
 
                     elif short_code == 'ex':
                         print("You have exited your account \n")
@@ -153,14 +153,14 @@ def intro():
 
         elif short_code == 'ex':
 
-            print("Ok well. See yah! \n")
+            print("Ok well. hope to see you again! \n")
 
             break
         else:
-            print("☹ _ I cant understand this, please use these codes \n")
+            print("I cant understand this, please use these codes \n")
 
 
 if __name__ == '__main__':
 
-    intro()
+    introduction()
     
