@@ -10,11 +10,11 @@ def create_password(account_name, passkey):
     '''
     new_password = password(account_name, passkey)
     return new_password
-# def save_password(password):
-#     '''
-#     function to save a password
-#     '''
-#     password.save_password()
+def save_password(password):
+    '''
+    function to save a password
+    '''
+    password.save_password()
 # def display_passwords():
 #     '''
 #     function that dispalys all passwords
