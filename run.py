@@ -25,5 +25,11 @@ def delete_password(password):
     function to delete a password
     '''
     password.delete_password()
+def check_existing_user(password2):
+    '''
+    function to check that enable login authentification
+    '''
+    return User.user_exist(password2)
+
 
 
