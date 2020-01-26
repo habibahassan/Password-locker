@@ -15,9 +15,9 @@ def save_password(password):
     function to save a password
     '''
     password.save_password()
-# def display_passwords():
-#     '''
-#     function that dispalys all passwords
-#     '''
-#     return password.display_passwords()
+def display_passwords():
+    '''
+    function that dispalys all passwords
+    '''
+    return password.display_passwords()
 
