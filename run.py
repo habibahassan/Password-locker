@@ -20,4 +20,10 @@ def display_passwords():
     function that dispalys all passwords
     '''
     return password.display_passwords()
+def delete_password(password):
+    '''
+    function to delete a password
+    '''
+    password.delete_password()
+
 
