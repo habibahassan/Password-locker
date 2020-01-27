@@ -47,18 +47,25 @@ def save_users(user):
     function to save a user
     '''
     user.save_user()
+
+def display_users(user):
+    '''
+    function to find users by there name
+    '''
+    return User.display_users()
+
 def introduction():
     print("Hey! Welcome to Password Locker")
     print('\n')
     print("Please sign up for an accout to enjoy services")
 
     while True:
-        print("⇨ Use these short codes : su - Sign up, lg - login, du-display all users, ex-Exit app ")
+        print("Use these short codes : su - Sign up, lg - login, du-display all users, ex-Exit app ")
         print('-'*64)
         print('\n')
         short_code = input().lower()
         print('\n')
-        if short_code == 'zu':
+        if short_code == 'su':
             print("New User")
             print("-"*9)
 
@@ -89,7 +96,7 @@ def introduction():
 
                 while True:
                     print(
-                        f"⇨ Welcome {search_account.first_name} {search_account.second_name} \n")
+                        f"Welcome {search_account.first_name} {search_account.second_name} \n")
                     print(
                         "cc-To create new password, vc-To view all your passwords, ex-exit account \n ")
                     print('-'*80)
@@ -116,10 +123,9 @@ def introduction():
 
                         elif generate == 'a':
                             print("Enter its password")
-                            passkey = input()
                             print('\n')
                         print(f"{account_name} has been saved")
-
+                        passkey = input()
                         save_password(create_password(
                             account_name, passkey))
 
@@ -148,7 +154,7 @@ def introduction():
                 print('\n')
         elif short_code == 'du':
             print("Here is a list of all the users\n")
-            for user in display_users():
+            for users in display_users():
                 print(f"{user.first_name} {user.second_name} \n")
 
         elif short_code == 'ex':
