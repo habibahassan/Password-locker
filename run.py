@@ -1,6 +1,6 @@
 from user import User
 from password import password
-
+import getpass
 def create_password(account_name, passkey):
     '''
     function to create a new password
@@ -45,7 +45,7 @@ def save_users(user):
     '''
     user.save_user()
 
-def display_users(user):
+def display_users():
     '''
     function to find users by there name
     '''
@@ -144,7 +144,8 @@ def introduction():
                 print('\n')
         elif short_code == 'du':
             print("Here is a list of all the users\n")
-            for users in display_users():
+            print('\n')
+            for user in display_users():
                 print(f"{user.first_name} {user.second_name} \n")
 
         elif short_code == 'ex':
