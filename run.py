@@ -1,7 +1,4 @@
 from user import User
-import string
-import random
-import getpass
 from password import password
 
 def create_password(account_name, passkey):
@@ -61,7 +58,6 @@ def introduction():
 
     while True:
         print("Use these short codes : su - Sign up, lg - login, du-display all users, ex-Exit app ")
-        print('-'*64)
         print('\n')
         short_code = input().lower()
         print('\n')
@@ -99,24 +95,18 @@ def introduction():
                         f"Welcome {search_account.first_name} {search_account.second_name} \n")
                     print(
                         "cc-To create new password, vc-To view all your passwords, ex-exit account \n ")
-                    print('-'*80)
-                    short_code = input().lower()
+                    short_code = input()
                     if short_code == 'cc':
                         print("New password")
-                        print('-'*14)
                         print("Enter account name")
                         account_name = input()
                         print("Make a password \n")
                         print(
                             "To make your own password press- a, to generate a password press - g \n")
-                        print('-'*50)
                         generate = input()
                         print('\n')
 
                         if generate == 'g':
-                            letters = string.ascii_letters + string.digits
-                            gpassword = ''.join(random.choice(letters)
-                                                for i in range(9))
                             print(
                                 f"Your new generated password is: {gpassword} \n")
                             passkey = gpassword

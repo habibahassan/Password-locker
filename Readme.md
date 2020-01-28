@@ -6,6 +6,8 @@
  By Habiba Hassan
 ## Technogies used
  * Python
+## Code Beat
+[![codebeat badge](https://codebeat.co/badges/1272bd64-9ab6-48ce-9315-ab41a51a92bc)](https://codebeat.co/projects/github-com-habibahassan-password-locker-master)
 ### contributing
  For any information pull request is welcome.
 ## Contact Information
